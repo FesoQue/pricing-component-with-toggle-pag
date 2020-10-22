@@ -1,0 +1,152 @@
+/*  ===========================
+            RESET
+    =========================== */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+html{
+    box-sizing: inherit;
+}
+
+/*  ===========================
+            GENERAL STYLING
+    =========================== */
+
+:root{
+    
+--Linear-Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+--Very-LightGrayishBlue: hsl(240, 78%, 98%);
+--Light-GrayishBlue: hsl(234, 14%, 74%);
+--Grayish-Blue: hsl(233, 13%, 49%);
+--Dark-GrayishBlue: hsl(232, 13%, 33%);
+}
+
+body{
+    position: relative;
+    background: var(--Very-LightGrayishBlue);
+    overflow-x: hidden;
+}
+
+/*
+.bg-top img{
+    position: absolute;
+    width: 350px;
+    z-index: -1;
+    top: -70px;
+    right: -180px;
+}
+
+.bg-bottom{
+    display: none;
+}
+*/
+
+/*  ===========================
+        CONTENT STYLING
+    =========================== */
+.heading h1{
+    font-size: 1.8rem;
+    color: var(--Grayish-Blue);
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex p{
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.toggle-bg{
+    width: 55px;
+    height: 28px;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border: 0;
+    border-radius: 20px;
+    padding: 0;
+    margin: 0 0.7em;
+}
+
+.toggle-bg:hover{
+    background: var(--Light-GrayishBlue);
+}
+
+.toggle-btn{
+    background: white;
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    margin-left: 52%;
+}
+
+.card{
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+}
+
+.togglePrice{
+    margin-left: 10%;
+}
+/*display monthly price none on toggle*/
+.hidden{
+    display: none;
+}
+
+/*display monthly price block on toggle*/
+.displayBlock{
+    display: block !important;
+}
+
+.price h1{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--Dark-GrayishBlue);
+}
+
+.price span{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0; 
+    
+}
+
+.annual-price,
+.annual-price2,
+.annual-price3{
+    display: none;
+}
+
+.toggler{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    margin: 0 0.7em;
+}
+
+.btn,
+.btn:hover{
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    outline: 0;
+    border: 0;
+}
+ 
+.prof,
+.prof-card,
+.prof-list-group{
+    background: hsl(237, 63%, 64%);
+    color: white;
+}
+
+.cta-btn,
+.cta-btn:hover{
+    background: white;
+    color: var(--Dark-GrayishBlue);
+}
+
+
